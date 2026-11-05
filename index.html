@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demandas de Design · Julia</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#16181d;--mute:#5d6470;--line:#e3e6ee;--blue:#1d4ed8;--red:#d62828;--soft:#eef3ff;--warn:#fff6e0;--warnline:#f0c46b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1115;--card:#181b22;--ink:#eceef3;--mute:#a1a8b5;--line:#2a2f3a;--blue:#7aa2ff;--red:#ff6b6b;--soft:#1b2335;--warn:#2a2416;--warnline:#7a6330}}
+:root[data-theme="dark"]{--bg:#0f1115;--card:#181b22;--ink:#eceef3;--mute:#a1a8b5;--line:#2a2f3a;--blue:#7aa2ff;--red:#ff6b6b;--soft:#1b2335;--warn:#2a2416;--warnline:#7a6330}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+.page{max-width:860px;margin:0 auto;padding:32px 16px 64px}
+header{border-bottom:3px solid var(--red);padding-bottom:18px;margin-bottom:24px}
+.tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+h1{font-size:30px;font-weight:800;margin:6px 0 8px;line-height:1.2}
+h2{font-size:21px;margin:0 0 12px}
+h3{font-size:15px;margin:18px 0 6px;color:var(--blue);text-transform:uppercase;letter-spacing:.04em}
+p{margin:6px 0}
+.lead{color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:18px 0}
+.copy{background:var(--soft);border-left:4px solid var(--blue);border-radius:8px;padding:10px 14px;margin:8px 0;font-weight:600}
+.note{background:var(--warn);border:1px solid var(--warnline);border-radius:8px;padding:10px 14px;margin:12px 0;font-size:14px}
+ul{padding-left:20px;margin:6px 0}
+li{margin:3px 0}
+a{color:var(--blue);word-break:break-word}
+.k{color:var(--mute);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.sizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:14px 0}
+.size{border:2px solid var(--red);border-radius:12px;padding:12px 14px;background:var(--soft)}
+.size .k{display:block}
+.size b{display:block;font-size:24px;font-weight:800;color:var(--red);margin:2px 0}
+.size small{color:var(--mute)}
+.fig{margin:14px 0 6px}.fig img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}.fig figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+.st{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--soft);color:var(--blue);margin:0 6px 6px 0}.st.r{background:var(--warn);color:var(--ink)}
+.sub{border-top:1px dashed var(--line);margin-top:18px;padding-top:6px}
+h4{font-size:14px;margin:14px 0 4px;color:var(--ink)}
+nav a{display:inline-block;margin:4px 8px 4px 0;font-size:14px}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<span class="tag">Grupo ØLV · Øliver's Pizza + Ogro Steaks</span>
+<h1>Demandas de design · Julia</h1>
+<p class="lead">As demandas em que precisamos do seu suporte, em ordem de prioridade. Cada bloco tem o contexto, o que entregar, as medidas e o prazo.</p>
+<nav><a href="#adesivos">1. Cartelas de adesivos</a><a href="#gatola">2. Campanha Gatola</a><a href="#quadros">3. Quadros Piratininga</a><a href="#vinhos">4. Cardápio de vinhos</a><a href="#ogro-sg">5. Ogro São Gonçalo</a></nav>
+</header>
+
+<section class="card" id="adesivos">
+<span class="st r">Prioridade 1</span><span class="st">Gráfica entrega até 13/11</span>
+<h2>🏷️ 1. Cartelas de adesivos · Øliver's e Ogro</h2>
+<p>Brinde da <b>Corrida do Futebol Light, Edição Pelé (14/11, Maracanã)</b>, onde as duas marcas participam. As cartelas vão pra área VIP, dentro da ecobag (Øliver's) e junto com o avental (Ogro).</p>
+<ul>
+<li><b>As artes já estão praticamente prontas:</b> foram feitas com IA e seguem junto com esta página.</li>
+<li><b>O que precisamos:</b> renderizar, vetorizar e deixar certinho, com arquivo fechado pra gráfica.</li>
+<li><b>Quantidade:</b> 100 cartelas de cada marca.</li>
+</ul>
+<div class="note">A gráfica precisa entregar até <b>sexta, 13/11</b> (véspera do evento). Por isso essas duas são a primeira entrega.</div>
+</section>
+
+<section class="card" id="gatola">
+<span class="st r">Prioridade 2</span><span class="st">Prazo: terça, 10/11</span>
+<h2>🎬 2. Campanha Øliver's × O Gatola da Cartola</h2>
+<p>Motion LED, post carrossel (feed + stories) e banner dos canais de delivery.</p>
+<div class="sub">
+<h3>Contexto</h3>
+<p>A Øliver's é parceira do filme de animação <b>O Gatola da Cartola</b> (<i>The Cat in the Hat</i>). A campanha tem combos especiais com uma <b>caixa interativa pra criança colorir</b>.</p>
+<ul>
+<li><b>Conceito central:</b> O SEGREDO SAIU DA CARTOLA!</li>
+<li><b>Direção criativa:</b> misturar personagens, cenários e elementos oficiais do filme com as pizzas da Øliver's. Comunicação divertida, visualmente impactante e com apelo comercial forte.</li>
+<li><b>Combo:</b> 1 pizza grande salgada + 1 pizza média doce + 1 caixa interativa pra colorir.</li>
+<li><b>Paleta:</b> azul e vermelho do filme. Coisa 1 e Coisa 2 são queridinhos das crianças, vale explorar.</li>
+<li><b>Obrigatório em todas as peças:</b> logos Øliver's + O Gatola da Cartola e o rodapé oficial do filme, legível. Usar apenas elementos oficiais do filme.</li>
+<li><b>Já existem:</b> a caixa (listras azul-turquesa com o desenho pra colorir, foto abaixo), o display de mesa e o panfleto. As peças novas seguem a mesma identidade visual do display.</li>
+</ul>
+</div>
+<div class="sub">
+<h3>Referências e assets</h3>
+<ul>
+<li><b>Assets oficiais liberados pelo filme:</b> <a href="https://espacoz-my.sharepoint.com/:f:/g/personal/lucas_vieira_espacoz_com_br/IgBhJMBnRYASRbyKvmeL3cIpAXOLo_M_VFVQowIUOMWWc60?e=DZCPdK" target="_blank">pasta SharePoint do filme</a></li>
+<li><b>Fotos das pizzas (usar nas peças):</b> <a href="https://drive.google.com/drive/folders/1tv8kgeML7AgbvGDUAB1Xi5B4cdtWxF5C?usp=drive_link" target="_blank">pasta 1</a> · <a href="https://drive.google.com/drive/folders/19utaO30_sbrf7mhe56r45HFd3XbirCcv?usp=sharing" target="_blank">pasta 2</a></li>
+<li><b>Motion do Coyote (referência pro LED):</b> <a href="https://drive.google.com/file/d/1wUZGAxqmrmqp9WOPfSXBMwBgMyqcMGun/view?usp=drive_link" target="_blank">assistir no Drive</a></li>
+<li><b>Referência do display de mesa (campanha anterior, Coyote vs. Acme):</b> <a href="https://drive.google.com/drive/folders/1kn4fir3DLUKfOk0iksH-RDb0Auj6pp3V?usp=drive_link" target="_blank">abrir no Drive</a></li>
+<li><b>Referência do Coyote (arquivo):</b> <a href="https://drive.google.com/file/d/1bhaehLeEncXC9DCW_15vdV09Wwf5wkzQ/view?usp=drive_link" target="_blank">abrir no Drive</a></li>
+</ul>
+<figure class="fig"><img src="caixa-gatola.jpg" alt="Tampa da caixa do Gatola: listras azul-turquesa, ilustração do Gatola em preto e branco pra colorir, textos Pra soltar a imaginação e Divirta-se" loading="lazy"><figcaption><b>Caixa do Gatola, versão final.</b> Listras azul-turquesa, ilustração do Gatola em preto e branco pra criança colorir, "Pra soltar a imaginação" e "Divirta-se".</figcaption></figure>
+<div class="note">A arte do display de mesa já está pronta (só com um ajuste de letra pendente) e é a base da identidade visual das peças novas.</div>
+</div>
+<div class="sub">
+<h3>🎥 Motion LED · ~15 segundos</h3>
+<div class="sizes">
+<div class="size"><span class="k">Motion LED</span><b>540 x 1080 px</b><small>vertical · ~15 segundos</small></div>
+</div>
+<p>Mesma pegada do <a href="https://drive.google.com/file/d/1wUZGAxqmrmqp9WOPfSXBMwBgMyqcMGun/view?usp=drive_link" target="_blank">motion do Coyote</a>, usando os assets do filme e as fotos das pizzas.</p>
+<h4>Tela 1</h4>
+<div class="copy">O segredo saiu da Cartola</div>
+<p>Texto sobre o <b>fundo do filme</b> (cenário oficial).</p>
+<h4>Tela 2</h4>
+<p>Imagem do <b>Gatola entrando animado com o combo</b> (pizzas + caixa). Junto, nesta mesma tela:</p>
+<div class="copy">Peça agora os combos especiais<br><span style="font-weight:500">O Gatola da Cartola + Øliver's Pizza</span></div>
+<p>+ <b>QR Code</b> pros pedidos.</p>
+<p class="lead">Mesma estrutura do motion de referência do Coyote, só que mais detalhada.</p>
+</div>
+<div class="sub">
+<h3>📱 Post carrossel da campanha</h3>
+<p>Post oficial de lançamento do combo, no Instagram e Facebook, em dois formatos:</p>
+<div class="sizes">
+<div class="size"><span class="k">Feed (carrossel)</span><b>1080 x 1350 px</b><small>4:5</small></div>
+<div class="size"><span class="k">Stories</span><b>1080 x 1920 px</b><small>9:16</small></div>
+</div>
+<p><b>Referências de carrossel:</b></p>
+<ul>
+<li><b>Post do Coyote (campanha anterior):</b> <a href="https://www.instagram.com/p/DcekNJuFTDB/?img_index=2" target="_blank">ver no Instagram</a></li>
+<li><b>Outras referências:</b> <a href="https://drive.google.com/drive/folders/1IRx_Bg8FzVmvYDZyYhMzFBuZf6dBAkcc?usp=sharing" target="_blank">abrir no Drive</a></li>
+</ul>
+<h4>Card 1 · capa</h4>
+<div class="copy">O SEGREDO SAIU DA CARTOLA!<br><span style="font-weight:500">Uma Campanha Especial Øliver's + O Gatola da Cartola</span></div>
+<p>Gatola em destaque, estética de pôster de cinema, com o Gatola aproximado (cabeça + chapéu listrado) e os personagens azuis ao redor.</p>
+<h4>Card 2 · a campanha</h4>
+<div class="copy">Inspirada no universo divertido e imprevisível do Gatola, a Øliver's apresenta combos especiais de O Gatola da Cartola, acompanhados de uma caixa interativa para colorir.</div>
+<p>Pizzas e a caixa interativa (com o desenho em preto e branco pra criança pintar) no cenário do filme.</p>
+<h4>Card 3 · os combos</h4>
+<div class="copy">Escolha seu combo favorito, solte a imaginação e aproveite essa aventura com a Øliver's!</div>
+<p>Apresentação visual dos combos.</p>
+<h4>Card 4 · fechamento</h4>
+<div class="copy">A magia saiu da cartola. Agora só falta chegar na sua casa!</div>
+</div>
+<div class="sub">
+<h3>📣 Banner dos canais de delivery</h3>
+<p><b>1 variação de copy</b>, adaptada nos formatos de cada canal: <b>iFood, site próprio (Accon) e 99Food</b>.</p>
+<div class="sizes">
+<div class="size"><span class="k">Site próprio (Accon)</span><b>1600 x 800 px</b><small>banner</small></div>
+<div class="size"><span class="k">99Food</span><b>600 x 600 px</b><small>foto</small></div>
+<div class="size"><span class="k">iFood</span><b>300 x 300 px</b><small>foto</small></div>
+</div>
+<p><b>📁 Referência de como os banners precisam estar:</b> <a href="https://drive.google.com/drive/folders/1EhgH6eS-46jYFgiSyDbl1UnGkCPbE5HE?usp=sharing" target="_blank">abrir no Drive</a></p>
+<div class="copy">O segredo saiu da Cartola.<br><span style="font-weight:500">Combos especiais mais uma caixa interativa pra colorir. Peça agora e solte a imaginação.</span></div>
+<ul>
+<li>Combo completo (1 pizza grande salgada + 1 pizza média doce) e a caixa interativa, aberta ou em perspectiva.</li>
+<li>Personagens e cenários oficiais integrados, pizzas em destaque, caixa como diferencial.</li>
+<li>Logos Øliver's + O Gatola da Cartola e rodapé oficial legível.</li>
+<li>CTA com destaque.</li>
+</ul>
+</div>
+</section>
+
+<section class="card" id="quadros">
+<span class="st r">Prioridade 3</span><span class="st">Prazo a definir</span>
+<h2>🖼️ 3. Quadros · Øliver's Piratininga</h2>
+<p>A Øliver's abre uma unidade nova na <b>Região Oceânica de Niterói</b>, reformada pra ser um restaurante familiar (Área Kids, oliveiras, quadros e latas nas paredes).</p>
+<ul>
+<li><b>20 artes de quadro</b>, que já vão <b>prontas, com mockup</b>.</li>
+<li><b>O que precisamos:</b> colocar cada arte no formato certinho do quadro e fechar o arquivo pra impressão.</li>
+</ul>
+<div class="sizes">
+<div class="size"><span class="k">Quadro</span><b>30 x 30 cm</b><small>quadrado P</small></div>
+<div class="size"><span class="k">Quadro</span><b>50 x 50 cm</b><small>quadrado G</small></div>
+<div class="size"><span class="k">Quadro</span><b>40 x 60 cm</b><small>retangular</small></div>
+</div>
+<div class="note">Quais artes vão em qual formato segue junto com os arquivos.</div>
+</section>
+
+<section class="card" id="vinhos">
+<span class="st">Ajuste rápido</span>
+<h2>🍷 4. Cardápio de vinhos · Øliver's</h2>
+<p>A arte já existe. Só precisa de um ajuste:</p>
+<ul>
+<li><b>Fonte da descrição dos produtos:</b> ficou muito fininha e ilegível. Trocar ou engrossar pra ficar legível na impressão.</li>
+</ul>
+</section>
+
+<section class="card" id="ogro-sg">
+<span class="st">Em seguida</span><span class="st">Inauguração 20/11</span>
+<h2>🥩 5. Inauguração · Ogro São Gonçalo</h2>
+<p>A Ogro Steaks abre um delivery em São Gonçalo em <b>20/11</b>. As peças da inauguração são <b>posts</b> pras redes (não são impressos nem brindes).</p>
+<div class="note">Briefing detalhado das peças a caminho.</div>
+</section>
+
+<p class="lead" style="text-align:center;margin-top:28px">Grupo ØLV · Comunicação · novembro/2026</p>
+</div>
+</body>
+</html>
